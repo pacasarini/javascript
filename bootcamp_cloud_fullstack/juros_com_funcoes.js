@@ -7,7 +7,7 @@ formas de pagamento:
 */
 
 function calcularPagamento (valor, descontoOuJuros){
-       return(valor * descontoOuJuros);
+    return(valor * descontoOuJuros);
 }
 
 
