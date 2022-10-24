@@ -6,3 +6,23 @@ instancie uma pessoa chamada Jose que tenha 70kg de peso e 1.75 m de altura e pe
 dizer o valor do seu IMC
 */
 
+class Pessoa {
+    nome;
+    peso;
+    altura;
+
+
+    constructor(nome, peso, altura){
+        this.nome = nome;
+        this.peso = peso;
+        this.altura = altura;
+    }
+
+    //METODO:
+    calcularIMC(){   //só colocar os parametros entre parenteses se precisar de infos externas a pessoa
+        return this.peso / this.peso ** 2;   //como tudo o q precisa pro calculo esta dentro da classe, nao eh preciso colocar nada no parenteses do metodo
+    }
+}
+
+const jose = new Pessoa('José', 70, 1.75);
+console.log(jose)
