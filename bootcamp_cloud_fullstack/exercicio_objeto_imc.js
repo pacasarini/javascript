@@ -36,9 +36,15 @@ class Pessoa {
             return ('Obesidade grave');
         }
     }
+
+    //METODO para descrever a pessoa:
+    descreverPessoa(){
+        console.log(`Nome: ${this.nome}; Peso: ${this.peso}kg; Classificação: ${this.classificarIMC()}.`);
+    }
+
 }
 
-function imprimirIMC(pessoa) {
+/*function imprimirIMC(pessoa) {
     console.log(`Pessoa: ${pessoa.nome}; Peso: ${pessoa.peso}kg; Classificação: ${pessoa.classificarIMC()}.`);
 }
 
@@ -52,10 +58,12 @@ const vitor = new Pessoa('Vitor', 60, 1.69);
 imprimirIMC(vitor);
 
 const michel = new Pessoa('Michel', 110, 1.67);
-imprimirIMC(michel);
+imprimirIMC(michel);*/
 
 
-
-
-
+//OUTRA FORMA DE FAZER O QUE ESTÁ ACIMA:
+new Pessoa('Renan', 63, 1.75).descreverPessoa(); 
+new Pessoa('José', 70, 1.75).descreverPessoa(); 
+new Pessoa('Vitor', 60, 1.69).descreverPessoa(); 
+new Pessoa('Michel', 110, 1.67).descreverPessoa(); 
 
