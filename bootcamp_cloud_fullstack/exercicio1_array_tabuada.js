@@ -1,7 +1,7 @@
 // crie um programa que dado um número imprime a sua tabuada
-const numero = 5
+const numero = 8
 
 for (let i = 1; i <= 10; i++) {
-   console.log(i * 5)
+   console.log(i * numero)
 }
 
