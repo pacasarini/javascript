@@ -7,7 +7,11 @@ for (let i = 0; i <= numeros.length; i++) {
     }
 }*/
 
-/*const numerosPares = [];
+
+
+/* ---------------------------------------
+
+const numerosPares = [];
 
     for (let i = 0; i < 10; i++) {
         const numeroPar = i % 2 === 0;
@@ -16,7 +20,12 @@ for (let i = 0; i <= numeros.length; i++) {
         }
     }
 
-    console.log(numerosPares); */
+    console.log(numerosPares); 
+    
+    ---------------------------------------*/
+
+
+
 
 /*const numeros = [];
 
@@ -24,7 +33,11 @@ for (let i = 0; i <= numeros.length; i++) {
         numeros.push(i);
     }
 
- console.log(numeros);*/
+ console.log(numeros);
+ 
+    ---------------------------------------*/
+
+
 
  const numerosPares = [];
 
