@@ -3,8 +3,11 @@ const pokemonList = document.getElementById('pokemonList')
 //estou pegando a lista de pokemon e atribuindo a um obj pra ser manipulado
 // "document" se refere a pagina inteira
 const loadMoreButton = document.getElementById('loadMoreButton')
-const limit = 10
+
+const maxRecords = 151
+const limit = 20
 let offset = 0;
+
 
 
 function loadPokemonItens(offset, limit) {
@@ -31,17 +34,23 @@ function convertPokemonToLi(pokemon) {
         pokemonList.innerHTML += newHtml
     })
 }
-    //o metodo .map substitui o comando abaixo:
-    // for (let i = 0; i < pokemons.length; i++) {
-    //     const pokemon = pokemons[i];
-    //     listItems.push(convertPokemonToLi(pokemon))
-    // }
+   
 
 loadPokemonItens(offset, limit)
 
 loadMoreButton.addEventListener('click', () => {
     offset += limit
-    loadPokemonItens(offset, limit)
+
+    const qtdRecordNextPage = offset + limit
+
+    if (qtdRecordNextPage >= maxRecords) {
+        const newLimit = maxRecords - offset
+        loadPokemonItens(offset, newLimit)
+
+        loadMoreButton.parentElement.removeChild(loadMoreButton)
+    } else {
+        loadPokemonItens(offset, limit)
+    }
 })
 
     

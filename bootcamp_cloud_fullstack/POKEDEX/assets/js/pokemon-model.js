@@ -2,7 +2,7 @@
 class Pokemon {
     number;
     name;
-    type;
+    type; //tipo principal que determina cor do fundo
     types = [];
     photo;
 }
