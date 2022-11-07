@@ -24,7 +24,7 @@
     background-color: #678fee;
 }
 
-.eletric {
+.electric {
     background-color: #f7cf2e;
 }
 
@@ -118,6 +118,24 @@
     align-self: flex-end;
 }
 
+.pagination {
+    display: flex;
+    direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.pagination button {
+    background-color: #6c79db;
+    border: none;
+    border-radius: 1rem;
+    color: #fff;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+}
 .pokemon .detail .types {
     padding: 0;
     margin: 0;
